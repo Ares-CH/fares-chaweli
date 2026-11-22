@@ -92,7 +92,7 @@
   .chip small { font-family: var(--body); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); user-select: none; }
 
   /* ticker */
-  .ticker { margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px))); overflow: hidden; border-block: 1px solid var(--line); padding-block: 14px; transform: rotate(-1.5deg); background: var(--panel); }
+  .ticker { margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px))); overflow: hidden; border-block: 1px solid var(--line); padding-block: 14px; background: var(--panel); }
   .ticker .belt { display: flex; width: max-content; animation: belt 26s linear infinite; }
   .ticker span { font-family: var(--display); font-weight: 800; font-size: clamp(22px, 3.6vw, 36px); text-transform: uppercase; white-space: nowrap; padding-right: 0.9em; }
   .ticker span:nth-child(even) { color: transparent; -webkit-text-stroke: 1px var(--steel); }
@@ -247,10 +247,10 @@
       <p>Recurring video series for a beauty and hair-care brand: product capsules, before/after transitions and comedy sketches. On-set filming, editing, Arabic and French subtitles, branded graphics. Videos play muted as you scroll; tap one for sound.</p>
     </div>
     <div class="filters" role="group" aria-label="Filter client videos">
-      <button type="button" class="on" data-f="all">All <span>11</span></button>
+      <button type="button" class="on" data-f="all">All <span>12</span></button>
       <button type="button" data-f="capsule">Capsules <span>3</span></button>
       <button type="button" data-f="transition">Transitions <span>5</span></button>
-      <button type="button" data-f="funny">Funny <span>3</span></button>
+      <button type="button" data-f="funny">Funny <span>4</span></button>
     </div>
     <div id="hellam-reel" class="groups">
       <div class="group" data-cat="capsule">
@@ -304,22 +304,27 @@
         </div>
       </div>
       <div class="group" data-cat="funny">
-        <div class="glabel"><b>Funny sketches</b><span>3 videos</span><em>Relatable sketches with the team.</em></div>
-        <div class="reel">
+        <div class="glabel"><b>Funny sketches</b><span>4 videos</span><em>Sketches with the team, edited with Tunisian memes.</em></div>
+        <div class="reel four">
       <figure class="clip reveal" data-cat="funny">
         <div class="frame"><span class="live">PLAYING</span><video src="v/h-founder.mp4" poster="img/h-founder.jpg" controls playsinline muted loop preload="none"></video></div>
-        <div class="meta"><span>00:30</span><span>9:16 · Sketch</span></div>
-        <h3>Founder vs employee</h3><p>Comedy sketch with the team, timed on the punchlines.</p>
+        <div class="meta"><span>00:30</span><span>9:16 · Meme edit</span></div>
+        <h3>Founder vs employee</h3><p>Comedy sketch with Tunisian meme cutaways, timed on the punchlines.</p>
       </figure>
       <figure class="clip reveal" data-cat="funny">
-        <div class="frame"><span class="live">PLAYING</span><video src="v/h-clients.mp4" poster="img/h-clients.jpg" controls playsinline muted loop preload="none"></video></div>
-        <div class="meta"><span>00:30</span><span>9:16 · Sketch</span></div>
-        <h3>Imitating the salon's clients</h3><p>POV sketch: the clients every salon knows.</p>
+        <div class="frame"><span class="live">PLAYING</span><video src="v/f-newgirl.mp4" poster="img/f-newgirl.jpg" controls playsinline muted loop preload="none"></video></div>
+        <div class="meta"><span>00:35</span><span>9:16 · Meme edit</span></div>
+        <h3>When the new girl works alone</h3><p>Trend recreation with a meme cutaway and a black-and-white ending.</p>
       </figure>
       <figure class="clip reveal" data-cat="funny">
-        <div class="frame"><span class="live">PLAYING</span><video src="v/h-genz.mp4" poster="img/h-genz.jpg" controls playsinline muted loop preload="none"></video></div>
-        <div class="meta"><span>00:12</span><span>9:16 · Sketch</span></div>
-        <h3>Gen Z vs millennials</h3><p>Quick relatable office sketch.</p>
+        <div class="frame"><span class="live">PLAYING</span><video src="v/f-price.mp4" poster="img/f-price.jpg" controls playsinline muted loop preload="none"></video></div>
+        <div class="meta"><span>00:22</span><span>9:16 · Meme edit</span></div>
+        <h3>The price-question client</h3><p>Dialogue sketch that ends on the trend's laughing memes.</p>
+      </figure>
+      <figure class="clip reveal" data-cat="funny">
+        <div class="frame"><span class="live">PLAYING</span><video src="v/f-asks.mp4" poster="img/f-asks.jpg" controls playsinline muted loop preload="none"></video></div>
+        <div class="meta"><span>00:32</span><span>9:16 · Meme edit</span></div>
+        <h3>The client who asks about everything</h3><p>One-take sketch with a meme popping in on her reaction.</p>
       </figure>
         </div>
       </div>
